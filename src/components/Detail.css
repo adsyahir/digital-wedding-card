@@ -1,0 +1,78 @@
+@font-face {
+  font-family: customFont;
+  src: url("../Font/FontsFree-Net-MoonTime-Regular-1.ttf");
+}
+.detail {
+  max-width: 425px;
+  width: 100%;
+  display: flex;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+  flex-direction: column;
+  height: auto;
+  background-color: hsl(0, 0%, 98%);
+  align-items: center;
+  padding: 30px 20px 30px 20px;
+  text-align: center;
+}
+.detail p {
+  margin: 30px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.8;
+}
+.detail h2 {
+  font-family: customFont;
+  color: #b7938f;
+  font-size: 2.5rem;
+}
+.detail label {
+  font-weight: bold;
+  opacity: 0.7;
+  line-height: 20px;
+}
+img {
+  width: 200px;
+}
+.detail h5 {
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+.ul-icon {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.ul-icon li {
+  font-size: 25px;
+  margin-top: 5px;
+  list-style: none;
+  cursor: pointer;
+}
+.facebook {
+  color: #4267b2;
+}
+.facebook:hover {
+  filter: brightness(120%);
+  color: #4267b2;
+}
+.twitter {
+  color: #1da1f2;
+}
+.twitter:hover {
+  filter: brightness(120%);
+  color: #1da1f2;
+}
+.whatsapp {
+  color: #25d366;
+}
+.whatsapp:hover {
+  filter: brightness(120%);
+  color: #25d366;
+}
+.telegram {
+  color: #0088cc;
+}
+.telegram:hover {
+  filter: brightness(120%);
+  color: #0088cc;
+}

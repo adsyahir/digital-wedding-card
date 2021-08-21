@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  display: flex;
+  background-image: url("C:\Users\rockm\Desktop\Website\Portfolio\kad-kadhwin-digital\src\images\Pink Flower Elegant Minimal White Wedding Invitation.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  max-width: 425px;
+  width: 100%;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.15);
+}
