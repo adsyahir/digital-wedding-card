@@ -22,7 +22,6 @@ footer {
   flex-direction: column;
   display: flex;
 }
-
 label {
   display: flex;
   justify-content: center;

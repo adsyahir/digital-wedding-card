@@ -1,7 +1,7 @@
 import "./Footer.css";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState ,useEffect } from "react";
+import { useState} from "react";
 import Location from "./Location";
 
 const Footer = () => {
