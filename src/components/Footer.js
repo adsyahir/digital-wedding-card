@@ -16,17 +16,7 @@ const Footer = () => {
   });
   const[location, setLocation] = useState("display-none");
 
-  function toggleActive(index) {
-    if (appState.objects[index] !== appState.activeObject) {
-      changeState({ ...appState, activeObject: appState.objects[index] });
-      console.log("1");
-    }
-    else 
-    {
-      changeState({ ...appState, activeObject: appState.objects });
-      console.log("2");
-    }
-  }
+  
   function openTab(index,e) {
     if (index === "Location" && appState.objects[e] !== appState.activeObject ) {
       changeState({ ...appState, activeObject: appState.objects[e] });
@@ -45,6 +35,7 @@ const Footer = () => {
       return "active";
     } else {
       return "not-active";
+
     }
   }
 
@@ -57,7 +48,6 @@ const Footer = () => {
               key={index}
               className={toggleActiveStyles(index)}
               onClick={() => {
-                toggleActive(index);
                 openTab(elements.nav,index);
               }}
               value={index}
