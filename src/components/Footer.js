@@ -20,7 +20,7 @@ const Footer = () => {
   function openTab(index,e) {
     if (index === "Location" && appState.objects[e] !== appState.activeObject ) {
       changeState({ ...appState, activeObject: appState.objects[e] });
-      setLocation("display-block");
+      setLocation("display-flex overlay-2");
       console.log(index);
       console.log(e);
     }
