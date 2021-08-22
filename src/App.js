@@ -62,18 +62,17 @@ function App() {
       .then((data) => {
         setCounts(data);
       });
-  },);
-  
-  const[input,setInput]=useState("");
+  });
 
-  function handleInput(event)
-  { 
-     setInput(event);
+  const [input, setInput] = useState("");
+
+  function handleInput(event) {
+    setInput(event);
   }
-    function increment(counter) {
+  function increment(counter) {
     var id = 1;
     counter++;
-    let item = {counter, id};
+    let item = { counter, id };
     console.log(input);
     console.log(id);
     console.warn("item", item);
@@ -83,13 +82,13 @@ function App() {
         Accept: "application/json",
         "Content-Type": "application/json",
       },
-      body:JSON.stringify(item)
+      body: JSON.stringify(item),
     }).then((result) => {
       result.json().then((resp) => {
         console.warn(resp);
       });
     });
-  }  
+  }
   /* npx json-server --watch data/db.json --port 8000 */
   return (
     <div className="App">
@@ -97,7 +96,9 @@ function App() {
       <Separator />
       <Detail />
       <Separator />
-      {counts && <Doa counts={counts} increment={increment} handleInput={handleInput}/>}
+      {counts && (
+        <Doa counts={counts} increment={increment} handleInput={handleInput} />
+      )}
       <Separator />
       <Countdown
         timerDays={timerDays}
@@ -112,5 +113,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
