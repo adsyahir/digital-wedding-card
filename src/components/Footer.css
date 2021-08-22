@@ -51,10 +51,6 @@ footer li:last-child {
 footer li label {
   margin-top: 3px;
 }
-footer li:hover {
-  background-color: #ccc;
-}
-
 footer li:first-child:hover {
   background-color: #ccc;
   border-radius: 10px 0px 0px 0px;
