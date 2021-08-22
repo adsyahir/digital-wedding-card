@@ -1,7 +1,7 @@
 import "./Footer.css";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useState ,useEffect } from "react";
 import Location from "./Location";
 
 const Footer = () => {
@@ -19,29 +19,32 @@ const Footer = () => {
   function toggleActive(index) {
     if (appState.objects[index] !== appState.activeObject) {
       changeState({ ...appState, activeObject: appState.objects[index] });
+      console.log("1");
     }
-    else if (appState.objects[index] === appState.activeObject)
+    else 
     {
       changeState({ ...appState, activeObject: appState.objects });
+      console.log("2");
     }
   }
   function openTab(index,e) {
     if (index === "Location" && appState.objects[e] !== appState.activeObject ) {
       changeState({ ...appState, activeObject: appState.objects[e] });
       setLocation("display-block");
-      
+      console.log("index"+1);
     }
     else
     {
-      setLocation("display-none");
       changeState({ ...appState, activeObject: appState.objects });
+      setLocation("display-none");
+      console.log("2");
     }
   }
   function toggleActiveStyles(index) {
     if (appState.objects[index] === appState.activeObject) {
       return "active";
     } else {
-      return " ";
+      return "not-active";
     }
   }
 
