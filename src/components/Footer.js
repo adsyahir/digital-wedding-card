@@ -21,7 +21,8 @@ const Footer = () => {
     if (index === "Location" && appState.objects[e] !== appState.activeObject ) {
       changeState({ ...appState, activeObject: appState.objects[e] });
       setLocation("display-block");
-      console.log("index"+1);
+      console.log(index);
+      console.log(e);
     }
     else
     {
