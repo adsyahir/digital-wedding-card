@@ -26,11 +26,10 @@
 .call .number {
   font-size: 2rem;
 }
-.phone  {
+.phone {
   color: #373434;
 }
-.phone:hover
-{
-    color: #373434;
-    filter: brightness(120%);
+.phone:hover {
+  color: #373434;
+  filter: brightness(120%);
 }
