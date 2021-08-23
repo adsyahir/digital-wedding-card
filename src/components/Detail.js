@@ -7,9 +7,9 @@ const Detail = () => {
     <div className="detail">
       <img src={Bismillah} alt="bismillah"></img>
       <p>Walimatulurus</p>
-      <h2>Muhammad Ali bin Abu Bakar</h2>
+      <h2>Abu Bakar bin Anwar</h2>
       <h2>&</h2>
-      <h2>Siti Fatimah binti Ismail Sabri</h2>
+      <h2>Zaiton binti Muhyidin</h2>
       <p>
         DENGAN SEGALA HORMATNYA MEMPERSILAKAN Y.B. / Y.BHG. TAN SRI / PUAN SRI /
         DATUK / DATO’/ DATIN / TUAN / PUAN / SAUDARA / SAUDARI KE MAJLIS
@@ -26,7 +26,7 @@ const Detail = () => {
       <label>Ketibaan Pengantin : 2:00 pm</label>
       <label>Majlis Tamat : 5:00 pm</label>
       <h5>LOKASI</h5>
-      <label>Dewan Mulia, Kodiang</label>
+      <label>Dewan Seri Melati, Kodiang</label>
       <p>
         Undangan kami setulus hati, dengan izin Allah SWT sudilah meraikan
         majlis ini. Sekian terima kasih. Wassalam

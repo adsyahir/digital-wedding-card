@@ -5,7 +5,7 @@ const Call = () => {
     <div className="call">
       <ul>
         <li>
-          <label>Hasnah</label>
+          <label>Abu</label>
           <div className="number">
             <a
               className="phone"
@@ -27,7 +27,7 @@ const Call = () => {
           </div>
         </li>
         <li>
-          <label>Rosmah</label>
+          <label>Zaiton</label>
           <div className="number">
             <a
               className="phone"
@@ -49,7 +49,7 @@ const Call = () => {
           </div>
         </li>
         <li>
-          <label>Najib</label>
+          <label>Kumar</label>
           <div className="number">
             <a className="phone" href="tel:0123456789">
               <FontAwesomeIcon icon={"phone"} />

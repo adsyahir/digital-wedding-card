@@ -10,7 +10,7 @@ const Calendar = () => {
           <p>Apple Calendar</p></a>
           </li>
           <li>
-          <a href="myevents.ics" rel="noreferrer" target="_blank" download>
+          <a href="https://calendar.google.com/calendar/r/eventedit?text=Walimatul " rel="noreferrer" target="_blank" download>
           <FontAwesomeIcon icon={['fab', 'google']} />
           <p>Google Calendar</p></a>
           </li>
@@ -18,5 +18,4 @@ const Calendar = () => {
       </div>
       );
 }
- 
 export default Calendar;

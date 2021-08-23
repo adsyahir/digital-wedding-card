@@ -1,5 +1,5 @@
 import "./Ucapan.css";
-import Button from "./Button";
+import './Button.css';
 const Ucapan = () => {
   return (
     <form>
@@ -18,7 +18,11 @@ const Ucapan = () => {
           placeholder="&#10;Ucapan anda"
           required
         ></textarea>
-        <Button />
+        <button type="submit" class="submit-button state-0">
+          <span class="pre-state-msg">Submit</span>
+          <span class="current-state-msg hide">Sending...</span>
+          <span class="done-state-msg hide">Done!</span>
+        </button>
       </div>
     </form>
   );

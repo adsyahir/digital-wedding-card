@@ -90,9 +90,19 @@ a:hover {
 }
 .display-none {
   display: none;
+  -webkit-transform: translateY(200%);
+  transform: translateY(200%);
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .display-flex {
   display: flex;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 .overlay-2 {
   position: fixed;

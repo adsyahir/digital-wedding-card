@@ -36,6 +36,7 @@ img {
 .detail h5 {
   margin-top: 40px;
   text-transform: uppercase;
+  font-weight: bold;
 }
 .ul-icon {
   width: 50%;
