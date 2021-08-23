@@ -6,7 +6,7 @@ const Detail = () => {
   return (
     <div className="detail">
       <img src={Bismillah} alt="bismillah"></img>
-      <p>Walimatulurus</p>
+      <p>Walimatul Urus</p>
       <h2>Abu Bakar bin Anwar</h2>
       <h2>&</h2>
       <h2>Zaiton binti Muhyidin</h2>
