@@ -1,8 +1,9 @@
 import "./Footer.css";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState} from "react";
-import Location from "./Location";
+import { useState } from "react";
+import Calendar from "./Calendar";
+import Call from "./Call";
 
 const Footer = () => {
   const [appState, changeState] = useState({
@@ -14,21 +15,25 @@ const Footer = () => {
       { nav: "RVSP", icon: "users", id: 3 },
     ],
   });
-  const[location, setLocation] = useState("display-none");
+  const [calendar, setCalendar] = useState("display-none");
+  const [call, setCall] = useState("display-none");
 
-  
-  function openTab(index,e) {
-    if (index === "Location" && appState.objects[e] !== appState.activeObject ) {
+  function openTab(index, e) {
+    if (index === "Calendar" && appState.objects[e] !== appState.activeObject) {
       changeState({ ...appState, activeObject: appState.objects[e] });
-      setLocation("display-flex overlay-2");
-      console.log(index);
-      console.log(e);
-    }
-    else
-    {
+      setCalendar("display-flex overlay-2");
+      setCall("display-none");
+    } else if (
+      index === "Contact" &&
+      appState.objects[e] !== appState.activeObject
+    ) {
+      changeState({ ...appState, activeObject: appState.objects[e] });
+      setCall("display-flex overlay-2");
+      setCalendar("display-none");
+    } else {
       changeState({ ...appState, activeObject: appState.objects });
-      setLocation("display-none");
-      console.log("2");
+      setCalendar("display-none");
+      setCall("display-none");
     }
   }
   function toggleActiveStyles(index) {
@@ -36,10 +41,8 @@ const Footer = () => {
       return "active";
     } else {
       return "not-active";
-
     }
   }
-
   return (
     <div className="nav">
       <footer>
@@ -49,7 +52,7 @@ const Footer = () => {
               key={index}
               className={toggleActiveStyles(index)}
               onClick={() => {
-                openTab(elements.nav,index);
+                openTab(elements.nav, index);
               }}
               value={index}
             >
@@ -59,8 +62,11 @@ const Footer = () => {
           ))}
         </ul>
       </footer>
-      <div className={location}>
-      <Location />
+      <div className={calendar}>
+        <Calendar />
+      </div>
+      <div className={call}>
+        <Call/>
       </div>
     </div>
   );

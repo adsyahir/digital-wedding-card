@@ -51,10 +51,10 @@ function App() {
       clearInterval(someref);
     };
   }, []);
-
+  /* 
   const [counts, setCounts] = useState(null);
 
-  useEffect(() => {
+   useEffect(() => {
     fetch("http://localhost:8000/count")
       .then((res) => {
         return res.json();
@@ -63,9 +63,7 @@ function App() {
         setCounts(data);
       });
   });
-
   const [input, setInput] = useState("");
-
   function handleInput(event) {
     setInput(event);
   }
@@ -88,7 +86,12 @@ function App() {
         console.warn(resp);
       });
     });
-  }
+  }   */
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    return setCount(count + 1);
+  };
   /* npx json-server --watch data/db.json --port 8000 */
   return (
     <div className="App">
@@ -96,9 +99,7 @@ function App() {
       <Separator />
       <Detail />
       <Separator />
-      {counts && (
-        <Doa counts={counts} increment={increment} handleInput={handleInput} />
-      )}
+      <Doa increment={increment} count={count} />
       <Separator />
       <Countdown
         timerDays={timerDays}

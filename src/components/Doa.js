@@ -1,7 +1,6 @@
 import "./Doa.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-const Doa = ({ counts, increment,handleInput}) => {
-
+const Doa = ({ count, increment }) => {
   return (
     <div className="doa">
       <p>
@@ -12,20 +11,12 @@ const Doa = ({ counts, increment,handleInput}) => {
         solehah.
       </p>
       <div className="row-like">
-        {counts.map((counts) => (
-          <div key={counts.id}>
-            <div className="like" onClick={() => {
-                increment(counts.counter);
-                handleInput(counts.counter)
-              }}>
-              <FontAwesomeIcon icon="heart" />
-            </div>
-            <span>{counts.counter}</span>
-          </div>
-        ))}
+        <div className="like" onClick={increment}>
+          <FontAwesomeIcon icon="heart" />
+        </div>
+        <span>{count}</span>
       </div>
     </div>
   );
 };
-
 export default Doa;
